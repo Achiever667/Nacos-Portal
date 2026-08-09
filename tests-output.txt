@@ -1,0 +1,47 @@
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Unit\ExampleTest[39m
+  [32;1m✓[39;22m[90m [39m[90mthat true is true[39m[90m                                                                                                                                                               [39m [90m0.01s[39m  
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Feature\Auth\AuthenticationTest[39m
+  [32;1m✓[39;22m[90m [39m[90mlogin screen can be rendered[39m[90m                                                                                                                                                   [39m [90m18.64s[39m  
+  [32;1m✓[39;22m[90m [39m[90musers can authenticate using the login screen[39m[90m                                                                                                                                   [39m [90m6.67s[39m  
+  [32;1m✓[39;22m[90m [39m[90musers can not authenticate with invalid password[39m[90m                                                                                                                                [39m [90m0.62s[39m  
+  [32;1m✓[39;22m[90m [39m[90musers can logout[39m[90m                                                                                                                                                                [39m [90m0.13s[39m  
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Feature\Auth\EmailVerificationTest[39m
+  [32;1m✓[39;22m[90m [39m[90memail verification screen can be rendered[39m[90m                                                                                                                                       [39m [90m2.19s[39m  
+  [32;1m✓[39;22m[90m [39m[90memail can be verified[39m[90m                                                                                                                                                           [39m [90m2.67s[39m  
+  [32;1m✓[39;22m[90m [39m[90memail is not verified with invalid hash[39m[90m                                                                                                                                        [39m [90m48.24s[39m  
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Feature\Auth\PasswordConfirmationTest[39m
+  [32;1m✓[39;22m[90m [39m[90mconfirm password screen can be rendered[39m[90m                                                                                                                                         [39m [90m0.58s[39m  
+  [32;1m✓[39;22m[90m [39m[90mpassword can be confirmed[39m[90m                                                                                                                                                       [39m [90m0.32s[39m  
+  [32;1m✓[39;22m[90m [39m[90mpassword is not confirmed with invalid password[39m[90m                                                                                                                                 [39m [90m0.44s[39m  
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Feature\Auth\PasswordResetTest[39m
+  [32;1m✓[39;22m[90m [39m[90mreset password link screen can be rendered[39m[90m                                                                                                                                      [39m [90m0.14s[39m  
+  [32;1m✓[39;22m[90m [39m[90mreset password link can be requested[39m[90m                                                                                                                                            [39m [90m0.44s[39m  
+  [32;1m✓[39;22m[90m [39m[90mreset password screen can be rendered[39m[90m                                                                                                                                           [39m [90m0.38s[39m  
+  [32;1m✓[39;22m[90m [39m[90mpassword can be reset with valid token[39m[90m                                                                                                                                          [39m [90m0.47s[39m  
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Feature\Auth\PasswordUpdateTest[39m
+  [32;1m✓[39;22m[90m [39m[90mpassword can be updated[39m[90m                                                                                                                                                         [39m [90m0.13s[39m  
+  [32;1m✓[39;22m[90m [39m[90mcorrect password must be provided to update password[39m[90m                                                                                                                            [39m [90m0.15s[39m  
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Feature\Auth\RegistrationTest[39m
+  [32;1m✓[39;22m[90m [39m[90mregistration screen can be rendered[39m[90m                                                                                                                                             [39m [90m0.17s[39m  
+  [32;1m✓[39;22m[90m [39m[90mnew users can register[39m[90m                                                                                                                                                          [39m [90m0.23s[39m  
+
+  [30;42;1m PASS [39;49;22m[39m Tests\Feature\ExampleTest[39m
+  [32;1m✓[39;22m[90m [39m[90mthe application returns a successful response[39m[90m                                                                                                                                   [39m [90m0.17s[39m  
+
+  [39;41;1m FAIL [39;49;22m[39m Tests\Feature\ProfileTest[39m
+  [31;1m⨯[39;22m[90m [39m[90mprofile page is displayed[39m[90m                                                                                                                                                      [39m [90m11.92s[39m  
+  [32;1m✓[39;22m[90m [39m[90mprofile information can be updated[39m[90m                                                                                                                                              [39m [90m6.89s[39m  
+  [32;1m✓[39;22m[90m [39m[90memail verification status is unchanged when the email address is unchanged[39m[90m                                                                                                      [39m [90m0.06s[39m  
+  [32;1m✓[39;22m[90m [39m[90muser can delete their account[39m[90m                                                                                                                                                   [39m [90m3.10s[39m  
+  [32;1m✓[39;22m[90m [39m[90mcorrect password must be provided to delete account[39m[90m                                                                                                                             [39m [90m0.34s[39m  
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in C:\Users\Lenovo 6th gen\Documents\NacosPortal\vendor\laravel\framework\src\Illuminate\Container\Container.php on line 906
+
+Fatal error: Allowed memory size of 134217728 bytes exhausted (tried to allocate 262144 bytes) in Unknown on line 0

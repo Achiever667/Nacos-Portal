@@ -24,6 +24,19 @@
 - [x] Empty State Component (illustration, title, description, action)
 - [x] Tooltip Component (top/bottom/left/right, Alpine.js, delay, arrow)
 
+## Phase 1 — RBAC
+- [x] Create Role enum (6 roles)
+- [x] Create Permission enum (granular permissions grouped by module)
+- [x] Add HasRoles trait to User model + convenience helpers
+- [x] Register role/permission middleware aliases in bootstrap/app.php
+- [x] Register Gates in AppServiceProvider
+- [x] Create RolePermissionSeeder (idempotent)
+- [x] Update DatabaseSeeder (super admin + role demo users)
+- [x] Add role-aware navigation authorization
+- [x] Write RBAC feature tests
+- [x] Run migrations & seeders
+- [x] Run tests & verify
+
 ## File Structure
 ```
 resources/views/components/ui/
@@ -62,4 +75,3 @@ app/View/Components/Ui/
 - WCAG accessible (aria attributes, keyboard navigation, focus management)
 - Alpine.js for interactive behavior
 - Tailwind CSS v4 with @theme config
-

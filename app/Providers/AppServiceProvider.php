@@ -19,6 +19,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Permission-based authorization is handled by Spatie's
+        // `register_permission_check_method` (enabled in config/permission.php),
+        // which registers the permission check method on Laravel's Gate.
+        // No custom Gate definitions are required here.
     }
 }
