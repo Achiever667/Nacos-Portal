@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Domains\Programs\Models\Program;
+use App\Domains\Students\Models\Student;
 use App\Enums\Role;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -40,5 +42,9 @@ class DatabaseSeeder extends Seeder
                 'email' => $email,
             ])->assignRole($role->value);
         }
+
+        // Seed initial portal content for development.
+        Program::factory()->count(6)->create();
+        Student::factory()->count(12)->create();
     }
 }

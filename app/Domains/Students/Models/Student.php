@@ -3,12 +3,18 @@
 namespace App\Domains\Students\Models;
 
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
     use HasFactory;
+
+    protected static function newFactory(): Factory
+    {
+        return \Database\Factories\StudentFactory::new();
+    }
 
     protected $fillable = [
         'first_name',
