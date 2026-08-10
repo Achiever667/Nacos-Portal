@@ -10,11 +10,53 @@
                     </a>
                 </div>
 
-                <!-- Navigation Links -->
+<!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    @can(App\Enums\Permission::ViewStudents->value)
+                        <x-nav-link :href="#" :active="false">
+                            {{ __('Students') }}
+                        </x-nav-link>
+                    @endcan
+
+                    @can(App\Enums\Permission::ViewPrograms->value)
+                        <x-nav-link :href="#" :active="false">
+                            {{ __('Programs') }}
+                        </x-nav-link>
+                    @endcan
+
+                    @can(App\Enums\Permission::ViewExecutives->value)
+                        <x-nav-link :href="#" :active="false">
+                            {{ __('Executives') }}
+                        </x-nav-link>
+                    @endcan
+
+                    @can(App\Enums\Permission::ViewBills->value)
+                        <x-nav-link :href="#" :active="false">
+                            {{ __('Billing') }}
+                        </x-nav-link>
+                    @endcan
+
+                    @can(App\Enums\Permission::ViewEvents->value)
+                        <x-nav-link :href="#" :active="false">
+                            {{ __('Events') }}
+                        </x-nav-link>
+                    @endcan
+
+                    @can(App\Enums\Permission::ViewTickets->value)
+                        <x-nav-link :href="#" :active="false">
+                            {{ __('Support') }}
+                        </x-nav-link>
+                    @endcan
+
+                    @can(App\Enums\Permission::ViewReports->value)
+                        <x-nav-link :href="#" :active="false">
+                            {{ __('Reports') }}
+                        </x-nav-link>
+                    @endcan
                 </div>
             </div>
 
@@ -64,12 +106,54 @@
         </div>
     </div>
 
-    <!-- Responsive Navigation Menu -->
+<!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
+
+            @can(App\Enums\Permission::ViewStudents->value)
+                <x-responsive-nav-link :href="#" :active="false">
+                    {{ __('Students') }}
+                </x-responsive-nav-link>
+            @endcan
+
+            @can(App\Enums\Permission::ViewPrograms->value)
+                <x-responsive-nav-link :href="#" :active="false">
+                    {{ __('Programs') }}
+                </x-responsive-nav-link>
+            @endcan
+
+            @can(App\Enums\Permission::ViewExecutives->value)
+                <x-responsive-nav-link :href="#" :active="false">
+                    {{ __('Executives') }}
+                </x-responsive-nav-link>
+            @endcan
+
+            @can(App\Enums\Permission::ViewBills->value)
+                <x-responsive-nav-link :href="#" :active="false">
+                    {{ __('Billing') }}
+                </x-responsive-nav-link>
+            @endcan
+
+            @can(App\Enums\Permission::ViewEvents->value)
+                <x-responsive-nav-link :href="#" :active="false">
+                    {{ __('Events') }}
+                </x-responsive-nav-link>
+            @endcan
+
+            @can(App\Enums\Permission::ViewTickets->value)
+                <x-responsive-nav-link :href="#" :active="false">
+                    {{ __('Support') }}
+                </x-responsive-nav-link>
+            @endcan
+
+            @can(App\Enums\Permission::ViewReports->value)
+                <x-responsive-nav-link :href="#" :active="false">
+                    {{ __('Reports') }}
+                </x-responsive-nav-link>
+            @endcan
         </div>
 
         <!-- Responsive Settings Options -->
